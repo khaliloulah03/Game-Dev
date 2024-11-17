@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Devinettes</title>
+    <link rel="stylesheet" href="Devinettes.css">
+</head>
+<body>
+    <h1>Jeu de Devinettes</h1>
+    <p>Devinez un nombre entre 1 et 100</p>
+    <h5>NB:il faut être  très  fort comme CR7 pour gagner</h5>
+    <input type="number" id="guessInput" placeholder="Entrez votre devinette" min="1" max="100" />
+    <button id="submitGuess">Soumettre</button>
+    <div id="result"></div>
+    <div id="attempts"></div>
+    <div id="timer">Temps restant : <span id="timeLeft">30</span> secondes</div>
+    <button id="resetButton">Rejouer</button>
+    <script src="game.js"></script>
+</body>
+</html>

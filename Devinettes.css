@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Couleur de fond douce */
+    color: #333; /* Couleur du texte foncé */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #007bff; /* Couleur bleu */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre du texte */
+}
+h5 {
+    
+    
+    color: #e01212; /* Couleur rouge*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Ombre du texte */
+
+}
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 2px solid #007bff; /* Bordure bleue */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Effets de transition */
+}
+
+input:focus {
+    outline: none;
+    border-color: #0056b3; /* Couleur de bordure au focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Ombre au focus */
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s; /* Transition pour les effets */
+}
+
+button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+    transform: scale(1.05); /* Légère agrandissement au survol */
+}
+
+button:disabled {
+    background-color: #ccc; /* Couleur de fond pour un bouton désactivé */
+    cursor: not-allowed; /* Curseur en main interdite */
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #e83e8c; /* Couleur rouge pour les résultats */
+}
+
+#attempts, #timer {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#timer {
+    color: #28a745; /* Couleur verte pour le temps */
+}
+
+#resetButton {
+    display: none; /* Pour masquer le bouton de réinitialisation au début */
+    background-color: #ffc107; /* Couleur de fond jaune */
+}
+
+#resetButton:hover {
+    background-color: #e0a800; /* Couleur au survol du bouton de réinitialisation */
+}
+
+/* Style pour mobile */
+@media (max-width: 600px) {
+    input {
+        width: 80%; /* Largeur de l'input sur mobile */
+    }
+
+    button {
+        width: 80%; /* Largeur du bouton sur mobile */
+    }
+}
